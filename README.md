@@ -1,0 +1,2 @@
+# AssertivePointTabulation
+アサーティブポイントを集計するプログラム
