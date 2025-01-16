@@ -39,25 +39,26 @@ pip freeze > requirements.txt
 # プログラムの仕様
 ## ディレクトリ構造
 ```
-02実験後データ/
-    ┝ 実験_活性度調査_01_{名前}/
-    │    └ 00/
-    │    │     └ 00_conv_file/
-    │    │     │   └ 00_00.wav
-    │    │     │   └ 00_01.wav
-    │    │     │   ...
-    │    │     └ 00_first_data.csv
-    │    │     └ 00_second_data.csv
-    │    │     └ assertive_point_00_first_data.csv
-    │    │     └ assertive_point_00_second_data.csv
-    │    └ 01/
-    │    ...
-    │    └ 014/
-    │    └ 会話活性度の定義.pdf
-    │    ...
-    ┝ 実験_活性度調査_03_{名前}/
-    ┝ 実験_活性度調査_07_{名前}/
-    ┝ 実験_活性度調査_09_{名前}/
+実験_活性度調査/
+    ┝ 02実験後データ/
+        ┝ 実験_活性度調査_01_{名前}/
+        │    └ 00/
+        │    │     └ 00_conv_file/
+        │    │     │   └ 00_00.wav
+        │    │     │   └ 00_01.wav
+        │    │     │   ...
+        │    │     └ 00_first_data.csv
+        │    │     └ 00_second_data.csv
+        │    │     └ assertive_point_00_first_data.csv
+        │    │     └ assertive_point_00_second_data.csv
+        │    └ 01/
+        │    ...
+        │    └ 014/
+        │    └ 会話活性度の定義.pdf
+        │    ...
+        ┝ 実験_活性度調査_03_{名前}/
+        ┝ 実験_活性度調査_07_{名前}/
+        ┝ 実験_活性度調査_09_{名前}/
 ```
 ## したいこと
 アサーティブ点を集計して，点数順に並べたcsvを出力したい
