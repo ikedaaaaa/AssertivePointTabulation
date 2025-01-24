@@ -44,26 +44,19 @@ def calculate(personal_assertive_point_list):
     personal_assertive_total_point_list = []
     total_points_by_session = defaultdict(int)
     session_counts = defaultdict(int)
-    i = 0
     for evaluator_data in personal_assertive_point_list:
         evaluator_totals = {}
         for session, points in evaluator_data.items():
             total_points = sum(sum(point_set) for point_set in points)
             evaluator_totals[session] = total_points
 
-           
             total_points_by_session[session] += total_points
             session_counts[session] += 1
 
         personal_assertive_total_point_list.append(evaluator_totals)
 
-    for total_data in personal_assertive_total_point_list:
-       
-
-        i += 1
-
     assertive_average_point = {
-        session: total_points_by_session[session] // session_counts[session]
+        session: round(total_points_by_session[session] / session_counts[session],1)
         for session in total_points_by_session
     }
 
